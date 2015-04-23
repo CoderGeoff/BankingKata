@@ -10,6 +10,9 @@ namespace BankingKata.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.LastTransactionDate = new DateTime(2015, 3, 31).ToString("f");
+            ViewBag.LastTransactionAmount = 32.50.ToString("c2");
+            ViewBag.CurrentBalance = 1050.42.ToString("c2");
             return View();
         }
     }
