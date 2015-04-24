@@ -1,13 +1,14 @@
-﻿<h2>Account summary</h2>
+﻿@model BankingKata.Controllers.AccountSummaryViewModel
+<h2>Account summary</h2>
 <div class="list-group">
     <div class="list-group-item">
         <h4 class="list-group-item-heading">Last transaction</h4>
-        <p class="list-group-item-text">@ViewBag.LastTransactionDate</p>
-        <p class="list-group-item-text">@ViewBag.LastTransactionAmount</p>
+        <p class="list-group-item-text">@Model.LastTransactionDate.ToLongDateString()</p>
+        <p class="list-group-item-text">@Model.LastTransactionAmount.ToString("c2")</p>
     </div>
     <div class="list-group-item">
         <h4 class="list-group-item-heading">Current balance</h4>
-        <p class="list-group-item-text">@ViewBag.CurrentBalance</p>
+        <p class="list-group-item-text">@Model.CurrentBalance.ToString("c2")</p>
     </div>
 </div>
 
