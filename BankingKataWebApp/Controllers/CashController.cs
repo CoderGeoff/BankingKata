@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace BankingKata.Controllers
+namespace BankingKataWebApp.Controllers
 {
     public class CashController : Controller
     {
