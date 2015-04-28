@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BankingKataWebApp.Controllers
+namespace BankingKataWebApp.ViewModels
 {
     public class AccountSummaryViewModel
     {
