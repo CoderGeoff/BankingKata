@@ -9,8 +9,12 @@ namespace BankingKataWebApp
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional }, new[] { "BankingKataWebApp.Controllers" }
-            );
+            const string entryName = "Default";
+            const string fromUrl = "{controller}/{action}/{id}";
+            object toUrlHandler = new { controller = "Home", action = "Index", id = UrlParameter.Optional };
+            string[] urlHandlerNamespaces = { "BankingKataWebApp.Controllers" };
+
+            routes.MapRoute(entryName, fromUrl, toUrlHandler, urlHandlerNamespaces);
         }
     }
 }
