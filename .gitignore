@@ -1,3 +1,5 @@
 BankingKata/bin/*
 BankingKata/obj/*
 packages/*
+*/bin/*
+*/obj/*
