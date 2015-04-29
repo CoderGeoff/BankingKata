@@ -1,0 +1,17 @@
+﻿@model BankingKataWebApp.ViewModels.WithdrawCashViewModel
+
+@{
+    ViewBag.Title = "Cash withdrawal";
+}
+
+<h2>Cash withdrawal</h2>
+@{
+    if (Model.Successful)
+    {
+        <p>Withdrawal completed.</p>
+    }
+    else
+    {
+        <p>Withdrawal failed.</p>
+    }
+}
