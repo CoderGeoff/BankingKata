@@ -8,7 +8,7 @@ namespace BankingKataWebApp.Controllers
         [HttpPost]
         public ActionResult Deposit(FormCollection values)
         {
-            return View(new DepositCashViewModel());
+            return View(new DepositCashViewModel() {Successful = true});
         }
     }
 }

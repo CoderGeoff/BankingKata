@@ -5,4 +5,13 @@
 }
 
 <h2>Cash deposit</h2>
-Deposit completed.
+@{
+    if (Model.Successful)
+    {
+        <p>Deposit completed.</p>
+    }
+    else
+    {
+        <p>Deposit failed.</p>
+    }
+}
