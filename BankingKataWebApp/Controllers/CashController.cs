@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using BankingKataWebApp.ViewModels;
 
 namespace BankingKataWebApp.Controllers
 {
@@ -7,7 +8,7 @@ namespace BankingKataWebApp.Controllers
         [HttpPost]
         public ActionResult Deposit(FormCollection values)
         {
-            throw new System.NotImplementedException();
+            return View(new DepositCashViewModel());
         }
     }
 }
